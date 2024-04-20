@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.2px;
+}
+
+.fa-xmark {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  cursor: pointer;
+}
+
+.menu-bar {
+  position: fixed;
+  z-index: 111;
+  width: 60%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: -61%;
+  transition: .4s;
+}
+
+.menu-bar .fa-circle-user {
+  color: white;
+  margin: 20px;
+}
+
+.menu-bar a {
+  color: white;
+  margin: 20px;
+}
+
+.menu-bar .fa-circle-user {
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.nav-bar-1 h1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 28px;
+}
+
+.nav-bar-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-bar-2 a {
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-bar-3 {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-new-arrivals-container {
+  margin: 10px 0px;
+}
+
+.main-new-arrivals-container h1 {
+  margin-left: 15px;
+  font-size: 27px;
+}
+
+.new-arrivals-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px 15px;
+  gap: 20px;
+}
+
+.new-arrivals {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-basis: 22%;
+  margin: 5px 0px;
+}
+
+.new-arrivals button {
+  position: absolute;
+  bottom: 20px;
+  left: 27%;
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 30px;
+  transition: .15s;
+  align-items: center;
+}
+
+.new-arrivals button:hover {
+  transform: scale(1.02);
+  filter: invert(100%);
+}
+
+.new-arrivals button:active {
+  transform: scale(1);
+}
+
+.footer {
+  margin-top: 15px;
+  background-color: black;
+  padding: 10px 15px;
+}
+
+.footer h4 {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.footer p {
+  color: white;
+  font-size: 14px;
+}
+
+.footer .i {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+.i i {
+  color: white;
+}
+
+@media screen and (max-width:700px) {
+
+  .nav-bar-2 {
+    display: none;
+  }
+
+  .nav-bar-3 {
+    display: block;
+  }
+}
